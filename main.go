@@ -35,7 +35,7 @@ func main() {
 		players[i] = Player{ID: i + 1, Money: (wins[i] * (numPlayers - 1) * betMoney) - ((totalRounds - wins[i]) * betMoney)}
 	}
 
-	// Display so tien cua moi nguoi truoc khi tien hanh tra no
+	// Display so tien cua moi nguoi truoc khi tien hanh trả nợ
 	fmt.Println("Final money for each player:")
 	for _, player := range players {
 		fmt.Printf("Player %d: %d\n", player.ID, player.Money)
